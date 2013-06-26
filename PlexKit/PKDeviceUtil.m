@@ -1,4 +1,4 @@
-// PlexKit.h
+// PKDeviceUtil.m
 //
 // Copyright (c) 2013 Till Hagger (http://owesome.ch/)
 //
@@ -20,7 +20,24 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "PlexKitDefines.h"
-#import "PKColorUtil.h"
-#import "PKMathUtil.h"
-#import "PKTableViewSectionLocationDelegate.h"
+#import "PKDeviceUtil.h"
+
+BOOL PKIsPad()
+{
+    return ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad);
+}
+
+NSString* PKDeviceName()
+{
+    return [[UIDevice currentDevice] name];
+}
+
+BOOL PKIsRetina()
+{
+    return PKScreenScale() > 1.0f ? YES : NO;
+}
+
+CGFloat PKScreenScale()
+{
+    return [[UIScreen mainScreen] scale];
+}

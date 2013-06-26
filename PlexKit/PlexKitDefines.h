@@ -1,4 +1,4 @@
-// PlexKit.h
+// PlexKitDefines.h
 //
 // Copyright (c) 2013 Till Hagger (http://owesome.ch/)
 //
@@ -20,7 +20,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "PlexKitDefines.h"
-#import "PKColorUtil.h"
-#import "PKMathUtil.h"
-#import "PKTableViewSectionLocationDelegate.h"
+
+#ifdef __cplusplus
+#define PLEX_KIT_EXPORT extern "C"
+#else
+#define PLEX_KIT_EXPORT	extern
+#endif

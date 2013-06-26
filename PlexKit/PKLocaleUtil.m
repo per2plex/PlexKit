@@ -1,4 +1,4 @@
-// PlexKit.h
+// PKLocaleUtil.m
 //
 // Copyright (c) 2013 Till Hagger (http://owesome.ch/)
 //
@@ -20,7 +20,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "PlexKitDefines.h"
-#import "PKColorUtil.h"
-#import "PKMathUtil.h"
-#import "PKTableViewSectionLocationDelegate.h"
+#import "PKLocaleUtil.h"
+
+NSString* PKCurrentLanguageCode()
+{
+    NSArray* languages = PKPreferredAvailableLanguages();
+    return ([languages count] > 0
+        ? [languages objectAtIndex:0]
+        : nil);
+}
+
+NSArray* PKPreferredAvailableLanguages()
+{
+    return [[NSBundle mainBundle] preferredLocalizations];
+}
+
+NSArray* PKPreferredLanguages()
+{
+    return [NSLocale preferredLanguages];
+}

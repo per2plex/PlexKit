@@ -1,4 +1,4 @@
-// PlexKit.h
+// PKDeviceUtil.h
 //
 // Copyright (c) 2013 Till Hagger (http://owesome.ch/)
 //
@@ -20,7 +20,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#import <Foundation/Foundation.h>
+
 #import "PlexKitDefines.h"
-#import "PKColorUtil.h"
-#import "PKMathUtil.h"
-#import "PKTableViewSectionLocationDelegate.h"
+
+PLEX_KIT_EXPORT BOOL PKIsPad();
+PLEX_KIT_EXPORT NSString* PKDeviceName();
+PLEX_KIT_EXPORT BOOL PKIsRetina();
+PLEX_KIT_EXPORT CGFloat PKScreenScale();

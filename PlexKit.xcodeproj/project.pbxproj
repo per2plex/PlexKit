@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3652B416BAF9F4E82E86DE20 /* PKMathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652B5B9AB5F69A9C68515B0 /* PKMathUtil.m */; };
+		3652B4AAD7910889DB280D27 /* PKLocaleUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652BB60F4F9E1D1F43CCA92 /* PKLocaleUtil.m */; };
+		3652B7C596BDDBF864F88601 /* PKDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652BEB563A2101DF17A5478 /* PKDeviceUtil.m */; };
+		3652B95177B8474F7759728E /* PKDirectoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652B039DE9ACA19FC1B4723 /* PKDirectoryUtil.m */; };
+		3652B955E2D94E5382793881 /* PKTableViewSectionLocationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652B5421F3F5B01805B794E /* PKTableViewSectionLocationDelegate.m */; };
+		3652BBFD067AF4A400A38372 /* PKColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652BF2F1F538B8D316FEF51 /* PKColorUtil.m */; };
+		3652BD28E9B50FC85705A0C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3652BB28A873EB69BEB60AC8 /* UIKit.framework */; };
 		BBEA1BC1177B144C004AA1E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEA1BC0177B144C004AA1E5 /* Foundation.framework */; };
-		BBEA1BC6177B144C004AA1E5 /* PlexKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBEA1BC5177B144C004AA1E5 /* PlexKit.h */; };
-		BBEA1BC8177B144C004AA1E5 /* PlexKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEA1BC7177B144C004AA1E5 /* PlexKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,18 +24,30 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				BBEA1BC6177B144C004AA1E5 /* PlexKit.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3652B039DE9ACA19FC1B4723 /* PKDirectoryUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDirectoryUtil.m; sourceTree = "<group>"; };
+		3652B36691B51A856DE20F0C /* PKDirectoryUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDirectoryUtil.h; sourceTree = "<group>"; };
+		3652B381D8723BADA5228E94 /* PKMathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMathUtil.h; sourceTree = "<group>"; };
+		3652B3C6AAC4A62D7066423C /* PKLocaleUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLocaleUtil.h; sourceTree = "<group>"; };
+		3652B3FB2078E97D2FBD9F2A /* PKDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDeviceUtil.h; sourceTree = "<group>"; };
+		3652B5421F3F5B01805B794E /* PKTableViewSectionLocationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTableViewSectionLocationDelegate.m; sourceTree = "<group>"; };
+		3652B5B9AB5F69A9C68515B0 /* PKMathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMathUtil.m; sourceTree = "<group>"; };
+		3652B6615F457975E96E36DD /* PlexKitDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlexKitDefines.h; sourceTree = "<group>"; };
+		3652B73EC118330D02AD22A3 /* PKColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKColorUtil.h; sourceTree = "<group>"; };
+		3652BA1EFFD45796A3C01780 /* PlexKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlexKit.h; sourceTree = "<group>"; };
+		3652BB28A873EB69BEB60AC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3652BB60F4F9E1D1F43CCA92 /* PKLocaleUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLocaleUtil.m; sourceTree = "<group>"; };
+		3652BC13E1C4F829468EC5FA /* PKTableViewSectionLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTableViewSectionLocationDelegate.h; sourceTree = "<group>"; };
+		3652BEB563A2101DF17A5478 /* PKDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDeviceUtil.m; sourceTree = "<group>"; };
+		3652BF2F1F538B8D316FEF51 /* PKColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKColorUtil.m; sourceTree = "<group>"; };
 		BBEA1BBD177B144C004AA1E5 /* libPlexKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlexKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEA1BC0177B144C004AA1E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BBEA1BC4177B144C004AA1E5 /* PlexKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlexKit-Prefix.pch"; sourceTree = "<group>"; };
-		BBEA1BC5177B144C004AA1E5 /* PlexKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlexKit.h; sourceTree = "<group>"; };
-		BBEA1BC7177B144C004AA1E5 /* PlexKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlexKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +56,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBEA1BC1177B144C004AA1E5 /* Foundation.framework in Frameworks */,
+				3652BD28E9B50FC85705A0C6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3652B1E6840FA69C43719702 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				3652B73EC118330D02AD22A3 /* PKColorUtil.h */,
+				3652BF2F1F538B8D316FEF51 /* PKColorUtil.m */,
+				3652B5B9AB5F69A9C68515B0 /* PKMathUtil.m */,
+				3652B381D8723BADA5228E94 /* PKMathUtil.h */,
+				3652B5421F3F5B01805B794E /* PKTableViewSectionLocationDelegate.m */,
+				3652BC13E1C4F829468EC5FA /* PKTableViewSectionLocationDelegate.h */,
+				3652BEB563A2101DF17A5478 /* PKDeviceUtil.m */,
+				3652B3FB2078E97D2FBD9F2A /* PKDeviceUtil.h */,
+				3652BB60F4F9E1D1F43CCA92 /* PKLocaleUtil.m */,
+				3652B3C6AAC4A62D7066423C /* PKLocaleUtil.h */,
+				3652B039DE9ACA19FC1B4723 /* PKDirectoryUtil.m */,
+				3652B36691B51A856DE20F0C /* PKDirectoryUtil.h */,
+			);
+			name = utility;
+			sourceTree = "<group>";
+		};
+		3652BC2AA385A40245564B75 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				3652B6615F457975E96E36DD /* PlexKitDefines.h */,
+				3652BA1EFFD45796A3C01780 /* PlexKit.h */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
 		BBEA1BB4177B144C004AA1E5 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				BBEA1BC0177B144C004AA1E5 /* Foundation.framework */,
+				3652BB28A873EB69BEB60AC8 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -73,19 +120,19 @@
 		BBEA1BC2177B144C004AA1E5 /* PlexKit */ = {
 			isa = PBXGroup;
 			children = (
-				BBEA1BC5177B144C004AA1E5 /* PlexKit.h */,
-				BBEA1BC7177B144C004AA1E5 /* PlexKit.m */,
-				BBEA1BC3177B144C004AA1E5 /* Supporting Files */,
+				BBEA1BC3177B144C004AA1E5 /* supporting */,
+				3652B1E6840FA69C43719702 /* utility */,
+				3652BC2AA385A40245564B75 /* core */,
 			);
 			path = PlexKit;
 			sourceTree = "<group>";
 		};
-		BBEA1BC3177B144C004AA1E5 /* Supporting Files */ = {
+		BBEA1BC3177B144C004AA1E5 /* supporting */ = {
 			isa = PBXGroup;
 			children = (
 				BBEA1BC4177B144C004AA1E5 /* PlexKit-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			name = supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBEA1BC8177B144C004AA1E5 /* PlexKit.m in Sources */,
+				3652BBFD067AF4A400A38372 /* PKColorUtil.m in Sources */,
+				3652B416BAF9F4E82E86DE20 /* PKMathUtil.m in Sources */,
+				3652B955E2D94E5382793881 /* PKTableViewSectionLocationDelegate.m in Sources */,
+				3652B7C596BDDBF864F88601 /* PKDeviceUtil.m in Sources */,
+				3652B4AAD7910889DB280D27 /* PKLocaleUtil.m in Sources */,
+				3652B95177B8474F7759728E /* PKDirectoryUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

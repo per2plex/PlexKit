@@ -1,4 +1,4 @@
-// PlexKit.h
+// PKMathUtil.m
 //
 // Copyright (c) 2013 Till Hagger (http://owesome.ch/)
 //
@@ -20,7 +20,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "PlexKitDefines.h"
-#import "PKColorUtil.h"
 #import "PKMathUtil.h"
-#import "PKTableViewSectionLocationDelegate.h"
+
+#define ARC4RANDOM_MAX 0x100000000
+
+double PXRandom()
+{
+    return ((double)arc4random() / ARC4RANDOM_MAX);
+}

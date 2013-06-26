@@ -1,4 +1,4 @@
-// PlexKit.h
+// PKTableViewSectionLocationDelegate.h
 //
 // Copyright (c) 2013 Till Hagger (http://owesome.ch/)
 //
@@ -20,7 +20,27 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "PlexKitDefines.h"
-#import "PKColorUtil.h"
-#import "PKMathUtil.h"
-#import "PKTableViewSectionLocationDelegate.h"
+#import <Foundation/Foundation.h>
+
+typedef enum PKTableViewSectionLocation
+{
+    COTableViewSectionLocationTop = 0,
+    COTableViewSectionLocationCenter,
+    COTableViewSectionLocationBottom,
+    COTableViewSectionLocationSingle
+} PKTableViewSectionLocation;
+
+@protocol PKTableViewSectionLocationSupport
+
+- (void)setRowLocationInSection:(PKTableViewSectionLocation)sectionLocation;
+
+@end
+
+@interface PKTableViewSectionLocationDelegate : NSObject <UITableViewDelegate>
+
+@property (nonatomic, weak) id<UITableViewDelegate> delegate;
+
++ (id)sectionLocationDelegateWithDelegate:(id<UITableViewDelegate>)delegate;
+- (id)initWithDelegate:(id<UITableViewDelegate>)delegate;
+
+@end
