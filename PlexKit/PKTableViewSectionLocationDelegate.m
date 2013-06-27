@@ -238,4 +238,12 @@
     }
 }
 
+- (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath
+{
+    if ([m_delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)])
+    {
+        [m_delegate tableView:tableView didSelectRowAtIndexPath:indexPath];
+    }
+}
+
 @end
