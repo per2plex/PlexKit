@@ -42,10 +42,10 @@ UIColor* PKColorWithHexRgb(int hexValue)
 
 UIColor* PKColorWithHexRgba(int hexValue)
 {
-    float alpha = ((hexValue >> 24) & 0xFF) / 255.0;
-    float red = ((hexValue >> 16) & 0xFF) / 255.0;
-    float green = (hexValue >> 8) / 255.0;
-    float blue = (hexValue & 0xFF) / 255.0;
+    float red = ((hexValue >> 24) & 0xFF) / 255.0;
+    float green = ((hexValue >> 16) & 0xFF) / 255.0;
+    float blue = ((hexValue >> 8) & 0xFF) / 255.0;
+    float alpha = (hexValue & 0xFF) / 255.0;
 
     return [UIColor colorWithRed:red
         green:green
