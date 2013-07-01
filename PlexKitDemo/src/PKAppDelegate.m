@@ -1,4 +1,4 @@
-// PKColorUtil.m
+// PKAppDelegate.m
 //
 // Copyright (c) 2013 Till Hagger (http://owesome.ch/)
 //
@@ -20,35 +20,49 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "PKColorUtil.h"
-#import "PKMathUtil.h"
+#import "PKAppDelegate.h"
+#import "PKDemoListViewController.h"
 
-UIColor* PKRandomColor()
+@implementation PKAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    return PKColorWithHexRgb((int)(PKRandom() * 0xFFFFFF));
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
+    PKDemoListViewController* demoListViewController = [[PKDemoListViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:demoListViewController];
+
+    self.window.rootViewController = navigationController;
+
+    return YES;
 }
 
-UIColor* PKColorWithHexRgb(int hexValue)
+- (void)applicationWillResignActive:(UIApplication *)application
 {
-    float red = ((hexValue >> 16) & 0xFF) / 255.0;
-    float green = ((hexValue >> 8) & 0xFF) / 255.0;
-    float blue = (hexValue & 0xFF) / 255.0;
 
-    return [UIColor colorWithRed:red
-        green:green
-        blue:blue
-        alpha:1.0f];
 }
 
-UIColor* PKColorWithHexRgba(int hexValue)
+- (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    float red = ((hexValue >> 24) & 0xFF) / 255.0;
-    float green = ((hexValue >> 16) & 0xFF) / 255.0;
-    float blue = ((hexValue >> 8) & 0xFF) / 255.0;
-    float alpha = (hexValue & 0xFF) / 255.0;
 
-    return [UIColor colorWithRed:red
-        green:green
-        blue:blue
-        alpha:alpha];
 }
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+
+}
+
+@end

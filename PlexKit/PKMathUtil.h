@@ -23,4 +23,4 @@
 #import <Foundation/Foundation.h>
 #import "PlexKitDefines.h"
 
-PLEX_KIT_EXPORT double PXRandom();
+PLEX_KIT_EXPORT double PKRandom();

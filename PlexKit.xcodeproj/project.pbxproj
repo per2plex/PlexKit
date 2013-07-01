@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3652B0B816DF4FFD1F7A5099 /* cell_background-single.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652B150D5009FFE3CF1CACE /* cell_background-single.png */; };
+		3652B129077F19AFB1798463 /* cell_background-top.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652B20659CE594BAFCB8B79 /* cell_background-top.png */; };
+		3652B18C27891BCDDC1B54A8 /* cell_background-middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652B6CEE2B1B216A4FF2859 /* cell_background-middle@2x.png */; };
+		3652B23CF5A594E916C395AD /* cell_background-top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652BC203C5A9CE3A78BDF6F /* cell_background-top@2x.png */; };
+		3652B2DCB7B79188F48C9BE5 /* cell_background-bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652BB22B2683520F6AD54A3 /* cell_background-bottom@2x.png */; };
+		3652B382B018FC60D31AFF6B /* PKSectionLocationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652BF9C8E43B7394DB6CE26 /* PKSectionLocationDemoViewController.m */; };
+		3652B3955C67D9A4C29A15F1 /* cell_background-middle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652B6DC207E648F315E5079 /* cell_background-middle.png */; };
 		3652B416BAF9F4E82E86DE20 /* PKMathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652B5B9AB5F69A9C68515B0 /* PKMathUtil.m */; };
+		3652B468645B219E8BBED86B /* PKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652BE5ED7728DE85D48AB62 /* PKAppDelegate.m */; };
+		3652B49121A3247F1FFAE88D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652BE3BAA31588514C2F16D /* Default.png */; };
 		3652B4AAD7910889DB280D27 /* PKLocaleUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652BB60F4F9E1D1F43CCA92 /* PKLocaleUtil.m */; };
+		3652B599ADDD3B5FE6660277 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652B2AA4573C05FD0FD1FBC /* Default@2x.png */; };
+		3652B5EBA86E0EF68F8EA63B /* PKSectionLocationDemoBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652B5EE7F50566C83841106 /* PKSectionLocationDemoBackground.m */; };
+		3652B61F925F87F06E604F67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3652B86F31F948FC280C590F /* InfoPlist.strings */; };
+		3652B64738CC6F6C8B68C404 /* cell_background-bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652B76A75238F660C803176 /* cell_background-bottom.png */; };
+		3652B790B68CD1846ADA7A3E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652BC80DC15ECD213AC4B36 /* Default-568h@2x.png */; };
 		3652B7C596BDDBF864F88601 /* PKDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652BEB563A2101DF17A5478 /* PKDeviceUtil.m */; };
+		3652B93E33A694AAD95D8417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652BD1CD2590C4E7AFF263A /* main.m */; };
 		3652B95177B8474F7759728E /* PKDirectoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652B039DE9ACA19FC1B4723 /* PKDirectoryUtil.m */; };
 		3652B955E2D94E5382793881 /* PKTableViewSectionLocationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652B5421F3F5B01805B794E /* PKTableViewSectionLocationDelegate.m */; };
+		3652BBCAF2FCED1ACDB53443 /* PKDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652B948F494C3FCD289719E /* PKDemoListViewController.m */; };
 		3652BBFD067AF4A400A38372 /* PKColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652BF2F1F538B8D316FEF51 /* PKColorUtil.m */; };
 		3652BD28E9B50FC85705A0C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3652BB28A873EB69BEB60AC8 /* UIKit.framework */; };
+		3652BEA399D88DEE07E92C40 /* cell_background-single@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3652B3F43D30E7D19E3EC1BE /* cell_background-single@2x.png */; };
 		BBEA1BC1177B144C004AA1E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEA1BC0177B144C004AA1E5 /* Foundation.framework */; };
+		BBEC0A721781A63800A0F9F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3652BB28A873EB69BEB60AC8 /* UIKit.framework */; };
+		BBEC0A731781A63800A0F9F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEA1BC0177B144C004AA1E5 /* Foundation.framework */; };
+		BBEC0A751781A63800A0F9F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEC0A741781A63800A0F9F4 /* CoreGraphics.framework */; };
+		BBEC0A941781B9FA00A0F9F4 /* libPlexKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEA1BBD177B144C004AA1E5 /* libPlexKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,24 +51,49 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3652B026CAA7D38D86BFB744 /* PKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAppDelegate.h; sourceTree = "<group>"; };
 		3652B039DE9ACA19FC1B4723 /* PKDirectoryUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDirectoryUtil.m; sourceTree = "<group>"; };
+		3652B150D5009FFE3CF1CACE /* cell_background-single.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_background-single.png"; sourceTree = "<group>"; };
+		3652B20659CE594BAFCB8B79 /* cell_background-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_background-top.png"; sourceTree = "<group>"; };
+		3652B2AA4573C05FD0FD1FBC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3652B30B244D12728D070209 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3652B36691B51A856DE20F0C /* PKDirectoryUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDirectoryUtil.h; sourceTree = "<group>"; };
+		3652B36F449C76BC06490E57 /* PKSectionLocationDemoBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSectionLocationDemoBackground.h; sourceTree = "<group>"; };
 		3652B381D8723BADA5228E94 /* PKMathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMathUtil.h; sourceTree = "<group>"; };
 		3652B3C6AAC4A62D7066423C /* PKLocaleUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLocaleUtil.h; sourceTree = "<group>"; };
+		3652B3F43D30E7D19E3EC1BE /* cell_background-single@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_background-single@2x.png"; sourceTree = "<group>"; };
 		3652B3FB2078E97D2FBD9F2A /* PKDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDeviceUtil.h; sourceTree = "<group>"; };
 		3652B5421F3F5B01805B794E /* PKTableViewSectionLocationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTableViewSectionLocationDelegate.m; sourceTree = "<group>"; };
+		3652B572AF86EB8CD14C2A51 /* PlexKitDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "PlexKitDemo-Info.plist"; sourceTree = "<group>"; };
 		3652B5B9AB5F69A9C68515B0 /* PKMathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMathUtil.m; sourceTree = "<group>"; };
+		3652B5EE7F50566C83841106 /* PKSectionLocationDemoBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSectionLocationDemoBackground.m; sourceTree = "<group>"; };
+		3652B64C4D2BD921E2BDA1BB /* PKSectionLocationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSectionLocationDemoViewController.h; sourceTree = "<group>"; };
 		3652B6615F457975E96E36DD /* PlexKitDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlexKitDefines.h; sourceTree = "<group>"; };
+		3652B6CEE2B1B216A4FF2859 /* cell_background-middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_background-middle@2x.png"; sourceTree = "<group>"; };
+		3652B6DC207E648F315E5079 /* cell_background-middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_background-middle.png"; sourceTree = "<group>"; };
 		3652B73EC118330D02AD22A3 /* PKColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKColorUtil.h; sourceTree = "<group>"; };
+		3652B76A75238F660C803176 /* cell_background-bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_background-bottom.png"; sourceTree = "<group>"; };
+		3652B948F494C3FCD289719E /* PKDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDemoListViewController.m; sourceTree = "<group>"; };
 		3652BA1EFFD45796A3C01780 /* PlexKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlexKit.h; sourceTree = "<group>"; };
+		3652BB22B2683520F6AD54A3 /* cell_background-bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_background-bottom@2x.png"; sourceTree = "<group>"; };
 		3652BB28A873EB69BEB60AC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3652BB60F4F9E1D1F43CCA92 /* PKLocaleUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLocaleUtil.m; sourceTree = "<group>"; };
 		3652BC13E1C4F829468EC5FA /* PKTableViewSectionLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTableViewSectionLocationDelegate.h; sourceTree = "<group>"; };
+		3652BC203C5A9CE3A78BDF6F /* cell_background-top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_background-top@2x.png"; sourceTree = "<group>"; };
+		3652BC5FA624920440877B28 /* PlexKitDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlexKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		3652BC80DC15ECD213AC4B36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3652BD1CD2590C4E7AFF263A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3652BE3BAA31588514C2F16D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3652BE5ED7728DE85D48AB62 /* PKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKAppDelegate.m; sourceTree = "<group>"; };
 		3652BEB563A2101DF17A5478 /* PKDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDeviceUtil.m; sourceTree = "<group>"; };
 		3652BF2F1F538B8D316FEF51 /* PKColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKColorUtil.m; sourceTree = "<group>"; };
+		3652BF9C8E43B7394DB6CE26 /* PKSectionLocationDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSectionLocationDemoViewController.m; sourceTree = "<group>"; };
+		3652BFEAA37F9E4C9663303D /* PKDemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDemoListViewController.h; sourceTree = "<group>"; };
 		BBEA1BBD177B144C004AA1E5 /* libPlexKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlexKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEA1BC0177B144C004AA1E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BBEA1BC4177B144C004AA1E5 /* PlexKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlexKit-Prefix.pch"; sourceTree = "<group>"; };
+		BBEC0A711781A63800A0F9F4 /* PlexKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlexKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBEC0A741781A63800A0F9F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +106,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBEC0A6E1781A63800A0F9F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBEC0A941781B9FA00A0F9F4 /* libPlexKit.a in Frameworks */,
+				BBEC0A721781A63800A0F9F4 /* UIKit.framework in Frameworks */,
+				BBEC0A731781A63800A0F9F4 /* Foundation.framework in Frameworks */,
+				BBEC0A751781A63800A0F9F4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3652B039C4B463EA85AC3A56 /* supporting */ = {
+			isa = PBXGroup;
+			children = (
+				3652B86F31F948FC280C590F /* InfoPlist.strings */,
+				3652B572AF86EB8CD14C2A51 /* PlexKitDemo-Info.plist */,
+				3652BE3BAA31588514C2F16D /* Default.png */,
+				3652B2AA4573C05FD0FD1FBC /* Default@2x.png */,
+				3652BC80DC15ECD213AC4B36 /* Default-568h@2x.png */,
+			);
+			name = supporting;
+			sourceTree = "<group>";
+		};
+		3652B14E02EA17FF9A4B1DCA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3652B6707105D0D2DC938B5D /* demo */,
+				3652BD7F60F023C8F5964996 /* supporting */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		3652B1E6840FA69C43719702 /* utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +160,51 @@
 			name = utility;
 			sourceTree = "<group>";
 		};
+		3652B3526956B06FFF2FEE21 /* PKTableViewSectionLocationDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3652B64C4D2BD921E2BDA1BB /* PKSectionLocationDemoViewController.h */,
+				3652B36F449C76BC06490E57 /* PKSectionLocationDemoBackground.h */,
+				3652BF9C8E43B7394DB6CE26 /* PKSectionLocationDemoViewController.m */,
+				3652B5EE7F50566C83841106 /* PKSectionLocationDemoBackground.m */,
+			);
+			name = PKTableViewSectionLocationDelegate;
+			sourceTree = "<group>";
+		};
+		3652B3B1C16FA5C05CE3CC43 /* list */ = {
+			isa = PBXGroup;
+			children = (
+				3652B948F494C3FCD289719E /* PKDemoListViewController.m */,
+				3652BFEAA37F9E4C9663303D /* PKDemoListViewController.h */,
+			);
+			name = list;
+			sourceTree = "<group>";
+		};
+		3652B638D2BFC355980425A7 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				3652B150D5009FFE3CF1CACE /* cell_background-single.png */,
+				3652B3F43D30E7D19E3EC1BE /* cell_background-single@2x.png */,
+				3652BB22B2683520F6AD54A3 /* cell_background-bottom@2x.png */,
+				3652B76A75238F660C803176 /* cell_background-bottom.png */,
+				3652B20659CE594BAFCB8B79 /* cell_background-top.png */,
+				3652B6CEE2B1B216A4FF2859 /* cell_background-middle@2x.png */,
+				3652BC203C5A9CE3A78BDF6F /* cell_background-top@2x.png */,
+				3652B6DC207E648F315E5079 /* cell_background-middle.png */,
+				3652B039C4B463EA85AC3A56 /* supporting */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		3652B6707105D0D2DC938B5D /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				3652B3B1C16FA5C05CE3CC43 /* list */,
+				3652B3526956B06FFF2FEE21 /* PKTableViewSectionLocationDelegate */,
+			);
+			name = demo;
+			sourceTree = "<group>";
+		};
 		3652BC2AA385A40245564B75 /* core */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,10 +214,22 @@
 			name = core;
 			sourceTree = "<group>";
 		};
+		3652BD7F60F023C8F5964996 /* supporting */ = {
+			isa = PBXGroup;
+			children = (
+				3652BE5ED7728DE85D48AB62 /* PKAppDelegate.m */,
+				3652BD1CD2590C4E7AFF263A /* main.m */,
+				3652B026CAA7D38D86BFB744 /* PKAppDelegate.h */,
+				3652BC5FA624920440877B28 /* PlexKitDemo-Prefix.pch */,
+			);
+			name = supporting;
+			sourceTree = "<group>";
+		};
 		BBEA1BB4177B144C004AA1E5 = {
 			isa = PBXGroup;
 			children = (
 				BBEA1BC2177B144C004AA1E5 /* PlexKit */,
+				BBEC0A761781A63800A0F9F4 /* PlexKitDemo */,
 				BBEA1BBF177B144C004AA1E5 /* Frameworks */,
 				BBEA1BBE177B144C004AA1E5 /* Products */,
 			);
@@ -104,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				BBEA1BBD177B144C004AA1E5 /* libPlexKit.a */,
+				BBEC0A711781A63800A0F9F4 /* PlexKitDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +249,7 @@
 			children = (
 				BBEA1BC0177B144C004AA1E5 /* Foundation.framework */,
 				3652BB28A873EB69BEB60AC8 /* UIKit.framework */,
+				BBEC0A741781A63800A0F9F4 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +272,15 @@
 			name = supporting;
 			sourceTree = "<group>";
 		};
+		BBEC0A761781A63800A0F9F4 /* PlexKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3652B638D2BFC355980425A7 /* res */,
+				3652B14E02EA17FF9A4B1DCA /* src */,
+			);
+			path = PlexKitDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +300,23 @@
 			productName = PlexKit;
 			productReference = BBEA1BBD177B144C004AA1E5 /* libPlexKit.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		BBEC0A701781A63800A0F9F4 /* PlexKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBEC0A8A1781A63800A0F9F4 /* Build configuration list for PBXNativeTarget "PlexKitDemo" */;
+			buildPhases = (
+				BBEC0A6D1781A63800A0F9F4 /* Sources */,
+				BBEC0A6E1781A63800A0F9F4 /* Frameworks */,
+				BBEC0A6F1781A63800A0F9F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlexKitDemo;
+			productName = PlexKitDemo;
+			productReference = BBEC0A711781A63800A0F9F4 /* PlexKitDemo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -177,9 +340,32 @@
 			projectRoot = "";
 			targets = (
 				BBEA1BBC177B144C004AA1E5 /* PlexKit */,
+				BBEC0A701781A63800A0F9F4 /* PlexKitDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBEC0A6F1781A63800A0F9F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3652B0B816DF4FFD1F7A5099 /* cell_background-single.png in Resources */,
+				3652BEA399D88DEE07E92C40 /* cell_background-single@2x.png in Resources */,
+				3652B2DCB7B79188F48C9BE5 /* cell_background-bottom@2x.png in Resources */,
+				3652B64738CC6F6C8B68C404 /* cell_background-bottom.png in Resources */,
+				3652B129077F19AFB1798463 /* cell_background-top.png in Resources */,
+				3652B18C27891BCDDC1B54A8 /* cell_background-middle@2x.png in Resources */,
+				3652B23CF5A594E916C395AD /* cell_background-top@2x.png in Resources */,
+				3652B3955C67D9A4C29A15F1 /* cell_background-middle.png in Resources */,
+				3652B61F925F87F06E604F67 /* InfoPlist.strings in Resources */,
+				3652B49121A3247F1FFAE88D /* Default.png in Resources */,
+				3652B599ADDD3B5FE6660277 /* Default@2x.png in Resources */,
+				3652B790B68CD1846ADA7A3E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBEA1BB9177B144C004AA1E5 /* Sources */ = {
@@ -195,7 +381,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBEC0A6D1781A63800A0F9F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3652BBCAF2FCED1ACDB53443 /* PKDemoListViewController.m in Sources */,
+				3652B382B018FC60D31AFF6B /* PKSectionLocationDemoViewController.m in Sources */,
+				3652B5EBA86E0EF68F8EA63B /* PKSectionLocationDemoBackground.m in Sources */,
+				3652B468645B219E8BBED86B /* PKAppDelegate.m in Sources */,
+				3652B93E33A694AAD95D8417 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3652B86F31F948FC280C590F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3652B30B244D12728D070209 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BBEA1BC9177B144C004AA1E5 /* Debug */ = {
@@ -275,6 +484,35 @@
 			};
 			name = Release;
 		};
+		BBEC0A881781A63800A0F9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlexKitDemo/src/PlexKitDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = .;
+				INFOPLIST_FILE = "PlexKitDemo/res/PlexKitDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BBEC0A891781A63800A0F9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlexKitDemo/src/PlexKitDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = .;
+				INFOPLIST_FILE = "PlexKitDemo/res/PlexKitDemo-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -294,6 +532,16 @@
 				BBEA1BCD177B144C004AA1E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBEC0A8A1781A63800A0F9F4 /* Build configuration list for PBXNativeTarget "PlexKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBEC0A881781A63800A0F9F4 /* Debug */,
+				BBEC0A891781A63800A0F9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

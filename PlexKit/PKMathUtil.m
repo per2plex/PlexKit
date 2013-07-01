@@ -24,7 +24,7 @@
 
 #define ARC4RANDOM_MAX 0x100000000
 
-double PXRandom()
+double PKRandom()
 {
     return ((double)arc4random() / ARC4RANDOM_MAX);
 }

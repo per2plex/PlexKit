@@ -1,4 +1,4 @@
-// PKColorUtil.m
+// PKAppDelegate.h
 //
 // Copyright (c) 2013 Till Hagger (http://owesome.ch/)
 //
@@ -20,35 +20,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "PKColorUtil.h"
-#import "PKMathUtil.h"
+#import <UIKit/UIKit.h>
 
-UIColor* PKRandomColor()
-{
-    return PKColorWithHexRgb((int)(PKRandom() * 0xFFFFFF));
-}
+@interface PKAppDelegate : UIResponder <UIApplicationDelegate>
 
-UIColor* PKColorWithHexRgb(int hexValue)
-{
-    float red = ((hexValue >> 16) & 0xFF) / 255.0;
-    float green = ((hexValue >> 8) & 0xFF) / 255.0;
-    float blue = (hexValue & 0xFF) / 255.0;
+@property (strong, nonatomic) UIWindow* window;
 
-    return [UIColor colorWithRed:red
-        green:green
-        blue:blue
-        alpha:1.0f];
-}
-
-UIColor* PKColorWithHexRgba(int hexValue)
-{
-    float red = ((hexValue >> 24) & 0xFF) / 255.0;
-    float green = ((hexValue >> 16) & 0xFF) / 255.0;
-    float blue = ((hexValue >> 8) & 0xFF) / 255.0;
-    float alpha = (hexValue & 0xFF) / 255.0;
-
-    return [UIColor colorWithRed:red
-        green:green
-        blue:blue
-        alpha:alpha];
-}
+@end

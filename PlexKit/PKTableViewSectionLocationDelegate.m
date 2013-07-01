@@ -30,6 +30,10 @@
 
 @synthesize delegate = m_delegate;
 
+//======================================================================================================================
+// Initialization
+//======================================================================================================================
+
 + (id)sectionLocationDelegateWithDelegate:(id <UITableViewDelegate>)delegate
 {
     return [[PKTableViewSectionLocationDelegate alloc] initWithDelegate:delegate];
@@ -45,6 +49,27 @@
     return self;
 }
 
+//======================================================================================================================
+// Refreshing
+//======================================================================================================================
+
+- (void)refreshSectionLocationsInTableView:(UITableView*)tableView
+{
+    for (UITableViewCell* cell in tableView.visibleCells)
+    {
+        NSIndexPath* indexPath = [tableView indexPathForCell:cell];
+        NSInteger numberOfRows = [tableView numberOfRowsInSection:indexPath.section];
+
+        [self setSectionLocationOnCell:cell
+                         withIndexPath:indexPath
+                       andNumberOfRows:numberOfRows];
+    }
+
+}
+
+//======================================================================================================================
+// Reordering & Displaying
+//======================================================================================================================
 
 - (NSIndexPath*)tableView:(UITableView*)tableView
     targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath*)sourceIndexPath
@@ -172,17 +197,12 @@
             }
             else
             {
-                [self setSectionLocation:COTableViewSectionLocationCenter onCell:cell];
+                [self setSectionLocation:COTableViewSectionLocationMiddle onCell:cell];
             }
         }
     }
 
     return proposedDestinationIndexPath;
-}
-
-- (void)tableView:(UITableView*)tableView didEndEditingRowAtIndexPath:(NSIndexPath*)indexPath
-{
-    m_currentCellBeingReordered = nil;
 }
 
 - (void)tableView:(UITableView*)tableView
@@ -191,6 +211,27 @@
 {
     NSInteger numberOfRows = [tableView numberOfRowsInSection:indexPath.section];
 
+    [self setSectionLocationOnCell:cell
+                     withIndexPath:indexPath
+                   andNumberOfRows:numberOfRows];
+
+    // Forward to subdelegate
+    if ([m_delegate respondsToSelector:@selector(tableView:willDisplayCell:forRowAtIndexPath:)])
+    {
+        [m_delegate tableView:tableView
+            willDisplayCell:cell
+            forRowAtIndexPath:indexPath];
+    }
+}
+
+//======================================================================================================================
+// Helpers
+//======================================================================================================================
+
+- (void)setSectionLocationOnCell:(UITableViewCell*)cell
+                   withIndexPath:(NSIndexPath*)indexPath
+                 andNumberOfRows:(NSInteger)numberOfRows
+{
     if (numberOfRows == 1)
     {
         [self setSectionLocation:COTableViewSectionLocationSingle onCell:cell];
@@ -206,14 +247,7 @@
     }
     else
     {
-        [self setSectionLocation:COTableViewSectionLocationCenter onCell:cell];
-    }
-
-    if ([m_delegate respondsToSelector:@selector(tableView:willDisplayCell:forRowAtIndexPath:)])
-    {
-        [m_delegate tableView:tableView
-            willDisplayCell:cell
-            forRowAtIndexPath:indexPath];
+        [self setSectionLocation:COTableViewSectionLocationMiddle onCell:cell];
     }
 }
 
@@ -221,29 +255,57 @@
 {
     if ([cell conformsToProtocol:@protocol(PKTableViewSectionLocationSupport)])
     {
-        id<PKTableViewSectionLocationSupport> supportedCell = (id<PKTableViewSectionLocationSupport>)cell;
+        id<PKTableViewSectionLocationSupport> supportedCell =
+                (id<PKTableViewSectionLocationSupport>)cell;
+
         [supportedCell setRowLocationInSection:sectionLocation];
     }
 
     if ([cell.backgroundView conformsToProtocol:@protocol(PKTableViewSectionLocationSupport)])
     {
-        id<PKTableViewSectionLocationSupport> supportedBackgroundView = (id<PKTableViewSectionLocationSupport>)cell.backgroundView;
+        id<PKTableViewSectionLocationSupport> supportedBackgroundView =
+                (id<PKTableViewSectionLocationSupport>)cell.backgroundView;
+
         [supportedBackgroundView setRowLocationInSection:sectionLocation];
     }
 
     if ([cell.selectedBackgroundView conformsToProtocol:@protocol(PKTableViewSectionLocationSupport)])
     {
-        id<PKTableViewSectionLocationSupport> supportedBackgroundView = (id<PKTableViewSectionLocationSupport>)cell.selectedBackgroundView;
+        id<PKTableViewSectionLocationSupport> supportedBackgroundView =
+                (id<PKTableViewSectionLocationSupport>)cell.selectedBackgroundView;
+
         [supportedBackgroundView setRowLocationInSection:sectionLocation];
     }
 }
 
-- (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath
+
+//======================================================================================================================
+// Delegate forwarding aka Runtime magic. Obj-C <3
+//======================================================================================================================
+
+- (BOOL)respondsToSelector:(SEL)selector
 {
-    if ([m_delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)])
+    // First check if the selector is meant for us.
+    BOOL respondsToSelector = [super respondsToSelector:selector];
+
+    if (respondsToSelector)
     {
-        [m_delegate tableView:tableView didSelectRowAtIndexPath:indexPath];
+        return YES;
     }
+    else // If we don't respond to the selector check the subdelegate.
+    {
+        if ([m_delegate respondsToSelector:selector])
+        {
+            return YES;
+        }
+    }
+
+    return NO;
+}
+
+- (id)forwardingTargetForSelector:(SEL)selector
+{
+    return m_delegate; // Return the subdelegate to respond to unknown messages.
 }
 
 @end

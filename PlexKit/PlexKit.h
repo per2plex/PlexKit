@@ -21,6 +21,13 @@
 // THE SOFTWARE.
 
 #import "PlexKitDefines.h"
+
+// Utilities
 #import "PKColorUtil.h"
+#import "PKDeviceUtil.h"
+#import "PKDirectoryUtil.h"
+#import "PKLocaleUtil.h"
 #import "PKMathUtil.h"
+
+// Helpers
 #import "PKTableViewSectionLocationDelegate.h"

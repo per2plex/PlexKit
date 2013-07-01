@@ -25,6 +25,25 @@
 
 #import "PlexKitDefines.h"
 
+/**
+ * Returns a randomly generated UIColor.
+ *
+ * @return Randomly generated UIColor.
+ */
 PLEX_KIT_EXPORT UIColor* PKRandomColor();
+
+/**
+ * Returns a UIColor with the specified hexadecimal RGB color,
+ * e.g. 0xFFFFFF for a white color.
+ *
+ * @return UIColor with the specified hexadecimal RGB color
+ */
 PLEX_KIT_EXPORT UIColor* PKColorWithHexRgb(int hexValue);
+
+/**
+ * Returns a UIColor with the specified hexadecimal RGBA color,
+ * e.g. 0xFFFFFF7F for a white color with 50% transparency.
+ *
+ * @return UIColor with the specified hexadecimal RGBA color
+ */
 PLEX_KIT_EXPORT UIColor* PKColorWithHexRgba(int hexValue);
