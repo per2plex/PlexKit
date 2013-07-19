@@ -76,7 +76,9 @@
     toProposedIndexPath:(NSIndexPath*)proposedDestinationIndexPath
 {
     if ([m_delegate respondsToSelector:
-        @selector(tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:)])
+        @selector(tableView:
+            targetIndexPathForMoveFromRowAtIndexPath:
+            toProposedIndexPath:)])
     {
         proposedDestinationIndexPath =
             [m_delegate tableView:tableView
@@ -84,30 +86,36 @@
                 toProposedIndexPath:proposedDestinationIndexPath];
     }
 
-    UITableViewCell* currentCell = [tableView cellForRowAtIndexPath:sourceIndexPath];
+    // Might be nil if we're dragging the cell out of the view ...
+    UITableViewCell* currentCell =
+        [tableView cellForRowAtIndexPath:sourceIndexPath];
 
-    if (!m_currentCellBeingReordered || (currentCell && m_currentCellBeingReordered != currentCell))
+    // ... so we save it here so we can use it later.
+    if (currentCell &&
+        m_currentCellBeingReordered != currentCell)
     {
         m_currentCellBeingReordered = currentCell;
     }
 
+    // We create a mutable copy of the visible cells, ...
     NSMutableArray* array = [[tableView visibleCells] mutableCopy];
 
-    // cell goes out of view
-    if (m_currentCellBeingReordered && [array indexOfObject:m_currentCellBeingReordered] == NSNotFound)
+
+    // ... so we can add our possibly lost cell.
+    if (m_currentCellBeingReordered &&
+        [array indexOfObject:m_currentCellBeingReordered] == NSNotFound)
     {
-        m_currentCellBeingReordered.backgroundColor = [UIColor purpleColor];
         [array addObject:m_currentCellBeingReordered];
     }
-
 
     for (UITableViewCell* cell in array)
     {
         NSIndexPath* indexPath = [tableView indexPathForCell:cell];
-        NSInteger numberOfRows = [tableView numberOfRowsInSection:indexPath.section];
 
-        if ((indexPath.row == sourceIndexPath.row
-            && indexPath.section == sourceIndexPath.section) || cell == m_currentCellBeingReordered)
+        NSInteger numberOfRows =
+            [tableView numberOfRowsInSection:indexPath.section];
+
+        if (cell == m_currentCellBeingReordered)
         {
             indexPath = proposedDestinationIndexPath;
         }
@@ -124,7 +132,8 @@
                     sourceRow = -1;
                     targetRow = proposedDestinationIndexPath.row;
 
-                    indexPath = [NSIndexPath indexPathForRow:indexPath.row + 1 inSection:indexPath.section];
+                    indexPath = [NSIndexPath indexPathForRow:indexPath.row + 1
+                                                   inSection:indexPath.section];
                 }
                 else if (sourceIndexPath.section > indexPath.section)
                 {
@@ -152,15 +161,16 @@
 
 
                 if ((sourceRow == -1 && targetRow == -1 && indexPath.row == 0) ||
-                    (indexPath.row < sourceRow
-                        && indexPath.row >= targetRow))
+                    (indexPath.row < sourceRow &&
+                     indexPath.row >= targetRow))
                 {
                     indexPath = [NSIndexPath indexPathForRow:indexPath.row + 1 inSection:indexPath.section];
                 }
                 else if ((sourceRow == [tableView numberOfRowsInSection:proposedDestinationIndexPath.section] &&
-                    targetRow == [tableView numberOfRowsInSection:proposedDestinationIndexPath.section] && indexPath.row == [tableView numberOfRowsInSection:proposedDestinationIndexPath.section] - 1) ||
-                    (indexPath.row > sourceRow
-                        && indexPath.row <= targetRow))
+                          targetRow == [tableView numberOfRowsInSection:proposedDestinationIndexPath.section] &&
+                          indexPath.row == [tableView numberOfRowsInSection:proposedDestinationIndexPath.section] - 1) ||
+                         (indexPath.row > sourceRow
+                          && indexPath.row <= targetRow))
                 {
                     indexPath = [NSIndexPath indexPathForRow:indexPath.row - 1 inSection:indexPath.section];
                 }

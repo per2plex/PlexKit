@@ -28,3 +28,10 @@ PLEX_KIT_EXPORT BOOL PKIsPad();
 PLEX_KIT_EXPORT NSString* PKDeviceName();
 PLEX_KIT_EXPORT BOOL PKIsRetina();
 PLEX_KIT_EXPORT CGFloat PKScreenScale();
+
+PLEX_KIT_EXPORT NSString* PKSystemVersion();
+PLEX_KIT_EXPORT BOOL PKSystemVersionEqualTo(NSString* version);
+PLEX_KIT_EXPORT BOOL PKSystemVersionGreaterThan(NSString* version);
+PLEX_KIT_EXPORT BOOL PKSystemVersionGreaterThanOrEqual(NSString* version);
+PLEX_KIT_EXPORT BOOL PKSystemVersionLessThan(NSString* version);
+PLEX_KIT_EXPORT BOOL PKSystemVersionLessThanOrEqual(NSString* version);

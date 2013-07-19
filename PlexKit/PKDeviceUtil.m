@@ -41,3 +41,43 @@ CGFloat PKScreenScale()
 {
     return [[UIScreen mainScreen] scale];
 }
+
+NSString* PKSystemVersion()
+{
+    [[UIDevice currentDevice] systemVersion];
+}
+
+BOOL PKSystemVersionEqualTo(NSString* version)
+{
+    return [[[UIDevice currentDevice] systemVersion]
+               compare:version
+               options:NSNumericSearch] == NSOrderedSame;
+}
+
+BOOL PKSystemVersionGreaterThan(NSString* version)
+{
+    return [[[UIDevice currentDevice] systemVersion]
+               compare:version
+               options:NSNumericSearch] == NSOrderedDescending;
+}
+
+BOOL PKSystemVersionGreaterThanOrEqual(NSString* version)
+{
+    return [[[UIDevice currentDevice] systemVersion]
+               compare:version
+               options:NSNumericSearch] != NSOrderedAscending;
+}
+
+BOOL PKSystemVersionLessThan(NSString* version)
+{
+    return [[[UIDevice currentDevice] systemVersion]
+               compare:version
+               options:NSNumericSearch] == NSOrderedAscending;
+}
+
+BOOL PKSystemVersionLessThanOrEqual(NSString* version)
+{
+    return [[[UIDevice currentDevice] systemVersion]
+               compare:version
+               options:NSNumericSearch] != NSOrderedDescending;
+}
