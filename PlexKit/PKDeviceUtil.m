@@ -44,7 +44,7 @@ CGFloat PKScreenScale()
 
 NSString* PKSystemVersion()
 {
-    [[UIDevice currentDevice] systemVersion];
+    return [[UIDevice currentDevice] systemVersion];
 }
 
 BOOL PKSystemVersionEqualTo(NSString* version)
