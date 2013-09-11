@@ -38,7 +38,7 @@ PLEX_KIT_EXPORT UIColor* PKRandomColor();
  *
  * @return UIColor with the specified hexadecimal RGB color
  */
-PLEX_KIT_EXPORT UIColor* PKColorWithHexRgb(int hexValue);
+PLEX_KIT_EXPORT UIColor* PKColorWithHexRgb(NSUInteger hexValue);
 
 /**
  * Returns a UIColor with the specified hexadecimal RGBA color,
@@ -46,4 +46,4 @@ PLEX_KIT_EXPORT UIColor* PKColorWithHexRgb(int hexValue);
  *
  * @return UIColor with the specified hexadecimal RGBA color
  */
-PLEX_KIT_EXPORT UIColor* PKColorWithHexRgba(int hexValue);
+PLEX_KIT_EXPORT UIColor* PKColorWithHexRgba(NSUInteger hexValue);

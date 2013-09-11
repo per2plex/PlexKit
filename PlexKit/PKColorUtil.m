@@ -25,10 +25,10 @@
 
 UIColor* PKRandomColor()
 {
-    return PKColorWithHexRgb((int)(PKRandom() * 0xFFFFFF));
+    return PKColorWithHexRgb((NSUInteger)(PKRandom() * 0xFFFFFF));
 }
 
-UIColor* PKColorWithHexRgb(int hexValue)
+UIColor* PKColorWithHexRgb(NSUInteger hexValue)
 {
     float red = ((hexValue >> 16) & 0xFF) / 255.0;
     float green = ((hexValue >> 8) & 0xFF) / 255.0;
@@ -40,7 +40,7 @@ UIColor* PKColorWithHexRgb(int hexValue)
         alpha:1.0f];
 }
 
-UIColor* PKColorWithHexRgba(int hexValue)
+UIColor* PKColorWithHexRgba(NSUInteger hexValue)
 {
     float red = ((hexValue >> 24) & 0xFF) / 255.0;
     float green = ((hexValue >> 16) & 0xFF) / 255.0;
