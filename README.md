@@ -1,3 +1,5 @@
+**DEPRECATED**
+
 PlexKit
 =======
 A bunch of often used utility functions/classes.
